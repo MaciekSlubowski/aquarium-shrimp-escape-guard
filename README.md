@@ -4,7 +4,7 @@ A pair of 3D-printable corner covers for the top rim of an aquarium that stop sh
 
 The model is written in OpenSCAD and is fully parametric. All parameters and geometry are in one `.scad` file, and `left_guard.scad` / `right_guard.scad` open each guard on its own. The right guard is the mirror image of the left one, with its own dimensions.
 
-* **Shrimp escape along the glass and the equipment.** Amano shrimp climb the glass, the filter pipes and the cables, especially at night or after a water change. The back corners are where the filter pipes and the cables come over the rim, so that is where they get out.
+Amano shrimp climb out along the filter pipes, the cables and the silicone seams in the corners, mostly at night. In this tank, all of these meet at the two back corners, so that is where the guards go. The rest of the water surface stays open, so gas exchange is not reduced as it would be with a full lid.
 
 ## 📷 Gallery
 
@@ -145,7 +145,8 @@ aquarium-shrimp-escape-guard/
 * **Glass slot:** the first print used a 0.3 mm clearance and did not fit the glass because of print imperfections. The default is now 2.3 mm (12.3 mm slot for 10 mm glass). If the guard is loose, lower `glass_clearance`. If it doesn't slide on, raise it.
 * **Pipe position:** `*_pipe_offset` is measured from the inner face of the clip. If you change `glass_clearance`, the distance from the outer corner to the pipe changes by the same amount. The right guard's 60 mm needs `right_pipe_offset = 60 - clip_width` (the console prints both values).
 * **Pipe cutout:** `*_pipe_width = 23` is the width of the pipe plus its side holder. Measure your filter pipe. A cutout that is too wide leaves a gap that shrimp can climb through.
-* **Cables:** the 8 × 12 mm opening holds two round cables of about Ø6 mm, one behind the other. For thicker or flat cables, increase `right_cable_width`.
+* **Cables:** the 8 × 12 mm opening holds two round cables of about Ø6 mm, one behind the other. For thicker or flat cables, increase `right_cable_width`. Round cables leave small gaps in the corners of the opening, and a young shrimp climbing up a cable can get through them. Plug the gaps with a piece of filter sponge.
+* **Limits:** the guards cover only the two back corners. The front corners and the long edges stay open. If shrimp keep trying to climb out, check the water first (ammonia, nitrite, sudden changes in temperature or hardness, slow acclimation of new shrimp). The guards keep them in the tank, but they don't fix the reason they want to leave.
 
 ## 📝 Changelog
 
