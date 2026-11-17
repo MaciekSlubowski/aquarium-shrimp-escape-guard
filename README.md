@@ -4,7 +4,26 @@ A pair of 3D-printable corner covers for the top rim of an aquarium that stop sh
 
 The model is written in OpenSCAD and is fully parametric. All parameters and geometry are in one `.scad` file, and `left_guard.scad` / `right_guard.scad` open each guard on its own. The right guard is the mirror image of the left one, with its own dimensions.
 
+## 🦐 Why It Works
+
+* **Shrimp escape along the glass and the equipment.** Amano shrimp climb the glass, the filter pipes and the cables, especially at night or after a water change. The back corners are where the filter pipes and the cables come over the rim, so that is where they get out.
+* **An overhang stops them.** A shrimp can climb a vertical surface, but it can't walk upside down along a 40 mm ledge. When it reaches the ledge, it falls back into the water.
+* **The gaps are closed, not just covered.** A lid or a glass cover usually needs a cutout for the pipes, and shrimp escape through that cutout. The U cutout fits closely around the pipe, and the cable opening is only as big as the cables.
+* **Nothing else changes.** The guards clip onto the glass without glue or tools. The lighting, feeding and the water surface stay open, and gas exchange is not reduced as it would be with a full lid.
+
 ## 📷 Gallery
+
+### In use
+
+<p align="center">
+  <img src="images/photo_right_guard.jpg" height="300" alt="Right guard on the aquarium around the filter outlet pipe, with the cables going down behind the glass" />
+  <img src="images/photo_left_guard.jpg" height="300" alt="Left guard on the aquarium, top view, with the U cutout closely around the filter pipe" />
+</p>
+
+* **Right guard:** clipped onto the back corner around the filter outlet pipe. The heater and skimmer cables go down through the cable opening next to the pipe.
+* **Left guard:** seen from the front. The U cutout fits closely around the filter pipe, and the ledge covers the rim on both sides.
+
+### Renders
 
 <p align="center">
   <img src="images/left_guard.png" height="260" alt="Left guard - as printed" />
@@ -112,7 +131,7 @@ aquarium-shrimp-escape-guard/
 ├── stl/                                # Ready-to-print STLs (default dimensions)
 │   ├── left_guard.stl
 │   └── right_guard.stl
-├── images/                             # OpenSCAD renders
+├── images/                             # OpenSCAD renders and photos
 ├── LICENSE                             # CC BY-NC-SA 4.0
 └── README.md
 ```
